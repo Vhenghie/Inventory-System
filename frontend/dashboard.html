@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.1/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main_wrapper">
+            <aside>
+                <div class="brand">
+                    
+                </div>
+                <div class="menus">
+                    <span>
+                        <a href="dashboard.html">Dashboard</a>
+                    </span>
+                    <span>
+                        <a href="product.html">Products</a>
+                    </span>
+                    <span>
+                        <a href="inventory_movement.html">Inventory</a>
+                    </span>
+                    <span>
+                        <a href="sale.html">Sales</a>
+                    </span>
+                    <span>
+                        <a href="maintenance.html">Maintenance</a>
+                    </span>
+                </div>
+            </aside>
+            <main>
+                <div class="header">
+                    <span class="header_title">
+                        <span><i class="fa-brands fa-product-hunt"></i></span>
+                        <h3>Dashboard</h3>
+                    </span>
+                </div>
+                <div class="contents">
+                    <div class="chart_wrapper">
+                        <div class="charts topSellingProd">
+                            <div class="header">
+                                <p>Top Selling Products by Revenue</p>
+                            </div>
+                            <div class="chart_data">
+                                <canvas class="chartCanvas" id="topSellingChart">
+
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="charts salePerMonth">
+                            <div class="header">
+                                <p>Sales Per Month</p>
+                            </div>
+                            <div class="chart_data">
+                                <canvas class="chartCanvas" id="salePerMonth">
+
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="charts revPerCategory">
+                            <div class="header">
+                                <p>Revenue per Category</p>
+                            </div>
+                            <div class="chart_data" id="revPerCategorySpan">
+                                <canvas class="chartCanvas" id="revPerCategory">
+
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="scripts/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.1/js/dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

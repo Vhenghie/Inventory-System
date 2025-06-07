@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.1/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="styles/sale.css">
+    <title>Sale</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main_wrapper">
+            <aside>
+                <div class="brand">
+                    
+                </div>
+                <div class="menus">
+                    <span>
+                        <a href="dashboard.html">Dashboard</a>
+                    </span>
+                    <span>
+                        <a href="product.html">Products</a>
+                    </span>
+                    <span>
+                        <a href="inventory_movement.html">Inventory</a>
+                    </span>
+                    <span>
+                        <a href="sale.html">Sales</a>
+                    </span>
+                    <span>
+                        <a href="maintenance.html">Maintenance</a>
+                    </span>
+                </div>
+            </aside>
+            <main>
+                <div class="header">
+                    <span class="header_title">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <h3>Sale</h3>
+                    </span>
+                    <span>
+                        <button class="myBtn btnAdd" id="btnAdd"><i class="fa-solid fa-plus"></i></button>
+                    </span>
+                </div>
+                <div class="contents">
+                    <div class="table_wrapper">
+                        <table id="itemTable" class="itemTable">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <div class="modal" id="modal">
+                <div class="modal_form">
+                    <span class="modalHeader">
+                        <h3 id="modalTitle">Sale</h3>
+                        <a id="btnCloseModal"><i class="fa-solid fa-xmark"></i></a>
+                    </span>
+                    <span class="modalIdWrapper" id="modalIdWrapper">
+                        <label >Sale ID</label>
+                        <input type="text" id="modalId" readonly>
+                    </span>
+                    <span>
+                        <label>Sale Description</label>
+                        <input type="text" id="modalDescription">
+                    </span>
+                    <span id="productSpan">
+                        <label>Product</label>
+                        <select id="selectModalProduct"></select>
+                    </span>
+                    <span id="productDetailSpan">
+                        <label>Product Details</label>
+                        <span class="product_sale_wrapper">
+                            <span>
+                                <span>
+                                    <label>Product Category</label>
+                                    <input type="text" id="modalShowProdCategory" readonly>
+                                </span>
+                                <span>
+                                    <label>Unit</label>
+                                    <input type="text" id="modalShowProdUnit" readonly>
+                                </span>
+                                <span>
+                                    <label>Stock</label>
+                                    <input type="text" id="modalShowProdStock" readonly>
+                                </span>
+                                <span>
+                                    <label>Price</label>
+                                    <input type="text" id="modalShowProdPrice" readonly>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                    <span id="qtySpan">
+                        <label>Sale Unit Quantity</label>
+                        <input type="number" id="modalUnitQuantity">
+                    </span>
+                    <span id="priceSpan">
+                        <label>Sale Price</label>
+                        <input type="number" step="0.01" id="modalTotalPrice" readonly italic>
+                    </span>
+                    <span>
+                        <button id="btnSubmit">SUBMIT</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/sale.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.1/js/dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
