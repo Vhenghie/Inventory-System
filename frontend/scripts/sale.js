@@ -1,4 +1,4 @@
-let baseURL = 'http://inventory-management-system.runasp.net/api/';
+let baseURL = 'https://inventory-management-system.runasp.net/api/';
 
 let currentItem = null;
 let currentMethod = null;

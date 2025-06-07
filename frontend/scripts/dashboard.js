@@ -1,4 +1,4 @@
-let baseURL = 'http://inventory-management-system.runasp.net/api/Chart/';
+let baseURL = 'https://inventory-management-system.runasp.net/api/Chart/';
 
 document.addEventListener('DOMContentLoaded', async function () {
   
