@@ -1,4 +1,4 @@
-let baseURL = 'https://localhost:7130/api/Chart/';
+let baseURL = 'http://inventory-management-system.runasp.net/api/Chart/';
 
 document.addEventListener('DOMContentLoaded', async function () {
   
